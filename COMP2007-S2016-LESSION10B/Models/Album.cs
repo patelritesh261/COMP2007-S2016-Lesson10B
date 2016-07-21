@@ -7,6 +7,8 @@ namespace COMP2007_S2016_LESSION10B.Models
 {
     public class Album
     {
+
+
         /// <summary>
         /// This is the empty constructor
         /// </summary>
@@ -24,8 +26,16 @@ namespace COMP2007_S2016_LESSION10B.Models
             this.Title = Title;
         }
 
-        public int AlbumID { get; set; }
+        public int AlbumId
+        {
+            get; set;
+        }
+        public int GenreId { get; set; }
+        public int ArtistId { get; set; }
         public string Title { get; set; }
+        public decimal Price { get; set; }
+        public string AlbumArtUrl { get; set; }
         public Genre Genre { get; set; }
+        public Artist Artist { get; set; }
     }
 }
